@@ -95,7 +95,7 @@ steps:
       tag:
         - ${DRONE_TAG}
     when:
-      event: tag
+      event: push
 
   - name: k8s-deploy
     image: quay.io/honestbee/drone-kubernetes
