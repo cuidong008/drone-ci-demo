@@ -83,7 +83,7 @@ steps:
       - semantic-release
     when:
       branch: master
-      event: push
+      event: tag
 
   - name: build-production-image
     image: plugins/docker
